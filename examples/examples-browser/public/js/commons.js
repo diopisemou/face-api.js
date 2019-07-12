@@ -25,6 +25,10 @@ async function requestExternalImage(imageUrl) {
 function renderNavBar(navbarId, exampleUri) {
   const examples = [
     {
+      uri: 'proof',
+      name: 'Proof'
+    },
+    {
       uri: 'face_detection',
       name: 'Face Detection'
     },
@@ -119,7 +123,7 @@ function renderNavBar(navbarId, exampleUri) {
   const githubLink = document.createElement('a')
   githubLink.classList.add('waves-effect', 'waves-light', 'side-by-side')
   githubLink.id = 'github-link'
-  githubLink.href = 'https://github.com/justadudewhohacks/face-api.js'
+  githubLink.href = 'https://github.com/toxtli/face-api.js'
   const h5 = document.createElement('h5')
   h5.innerHTML = 'face-api.js'
   githubLink.appendChild(h5)

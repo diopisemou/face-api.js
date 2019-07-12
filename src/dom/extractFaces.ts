@@ -45,7 +45,10 @@ export async function extractFaces(
       ? det.forSize(canvas.width, canvas.height).box.floor()
       : det
   )
-    .map(box => box.clipAtImageBorders(canvas.width, canvas.height))
+    .map(box => {
+      console.log(box)
+      box.clipAtImageBorders(canvas.width, canvas.height)
+      })
 
   return boxes.map(({ x, y, width, height }) => {
     const faceImg = createCanvas({ width, height })
