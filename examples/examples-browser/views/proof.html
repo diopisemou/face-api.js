@@ -186,9 +186,9 @@
         if (result.length > 1) {
           $('#statusText').html('DETECTING...')
           $('#statusColor').css("background-color", "orange")
-          const faceImages = await faceapi.extractFaces(videoEl, result)
-          var descriptor = await faceapi.computeFaceDescriptor(faceImages[0])
-          console.log(descriptor)
+          //const faceImages = await faceapi.extractFaces(videoEl, result)
+          //var descriptor = await faceapi.computeFaceDescriptor(faceImages[0])
+          //console.log(descriptor)
         } else {
           $('#statusText').html('WAITING...')
           $('#statusColor').css("background-color", "red");
